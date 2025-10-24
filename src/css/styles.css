@@ -3,7 +3,7 @@
   --text:#2e2f42;
   --muted:#6b7280;
   --border:#e5e7eb;
-  --accent:#4e75ff;         /* синя кнопка з макету GOIT */
+  --accent:#4e75ff;         
   --accent-hover:#6c8cff;
   --card-bg:#fff;
   --shadow:0 2px 12px rgba(46,47,66,0.08);
@@ -72,7 +72,6 @@ body{
 }
 .search-btn:hover{ background:var(--accent-hover); }
 
-/* Лоадер — круговий індикатор як у ДЗ */
 .loader{
   margin:24px auto 0;
   width:48px;height:48px;
@@ -84,7 +83,6 @@ body{
 @keyframes spin{to{transform:rotate(360deg)}}
 .is-hidden{display:none !important}
 
-/* Галерея: грід 3 колонки на десктопі, 2 — на таблеті, 1 — на мобілці */
 .gallery{
   list-style:none;
   padding:32px 0 48px;
@@ -136,5 +134,4 @@ body{
   font-size:14px;
 }
 
-/* SimpleLightbox базова правка під біле тло */
 .sl-overlay{ background:rgba(0,0,0,.85) !important; }
