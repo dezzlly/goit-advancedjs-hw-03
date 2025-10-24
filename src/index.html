@@ -1,23 +1,39 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="uk">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
-    <link rel="stylesheet" href="./css/styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Pixabay Image Search</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
   </head>
   <body>
-    <load src="./partials/header.html" icon-path="img/sprite.svg#logo" />
+    <header class="page-header">
+      <div class="container">
+        <h1 class="visually-hidden">Пошук зображень</h1>
 
-    <main>
-      <!-- Loads the specified .html file -->
-      <load src="./partials/vite-promo.html" />
-      <load src="./partials/badges.html" />
+        <form class="search-form" id="search-form" autocomplete="off" novalidate>
+          <input
+            type="text"
+            name="query"
+            id="query"
+            class="search-input"
+            placeholder="Search images..."
+            aria-label="Пошук зображень"
+          />
+          <button type="submit" class="search-btn">Search</button>
+        </form>
+      </div>
+    </header>
+
+    <main class="container">
+      <div class="loader is-hidden" id="loader" aria-live="polite" aria-busy="true"></div>
+
+      <ul class="gallery" id="gallery" aria-live="polite"></ul>
     </main>
 
-    <load src="./partials/footer.html" />
-
-    <script type="module" src="./main.js"></script>
+    <script type="module" src="/main.js"></script>
   </body>
 </html>
+
