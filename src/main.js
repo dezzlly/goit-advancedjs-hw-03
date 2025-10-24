@@ -1,5 +1,3 @@
-console.log('[main] loaded');
-
 import './css/styles.css';
 import { fetchImages } from './js/pixabay-api.js';
 import { clearGallery, renderGallery, toggleLoader } from './js/render-functions.js';
