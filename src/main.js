@@ -1,10 +1,12 @@
+console.log('[main] loaded');
+
+import './css/styles.css';
 import { fetchImages } from './js/pixabay-api.js';
 import { clearGallery, renderGallery, toggleLoader } from './js/render-functions.js';
 import iziToast from 'izitoast';
 import 'izitoast/dist/css/iziToast.min.css';
 import SimpleLightbox from 'simplelightbox';
 import 'simplelightbox/dist/simple-lightbox.min.css';
-import './css/styles.css';
 
 
 const refs = {

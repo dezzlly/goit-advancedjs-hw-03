@@ -1,29 +1,27 @@
-<!doctype html>
-<html lang="uk">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Pixabay Image Search</title>
-    <link rel="stylesheet" href="./css/styles.css" />
-  </head>
-  <body>
-    <h1>Пошук зображень</h1>
+<body>
+  <header class="page-header">
+    <div class="container">
+      <h1 class="visually-hidden">Пошук зображень</h1>
 
-    <form class="form" id="search-form" autocomplete="off" novalidate>
-      <input
-        type="text"
-        name="query"
-        id="query"
-        placeholder="Search images..."
-        aria-label="Пошук зображень"
-      />
-      <button type="submit">Search</button>
-    </form>
+      <form class="search-form" id="search-form" autocomplete="off" novalidate>
+        <input
+          type="text"
+          name="query"
+          id="query"
+          class="search-input"
+          placeholder="Search images..."
+          aria-label="Пошук зображень"
+        />
+        <button type="submit" class="search-btn">Search</button>
+      </form>
+    </div>
+  </header>
 
+  <main class="container">
     <span class="loader is-hidden" id="loader" aria-live="polite" aria-busy="true"></span>
-
     <ul class="gallery" id="gallery" aria-live="polite"></ul>
+  </main>
 
-    <script type="module" src="./main.js"></script>
-  </body>
-</html>
+  <script type="module" src="./main.js"></script>
+</body>
+
